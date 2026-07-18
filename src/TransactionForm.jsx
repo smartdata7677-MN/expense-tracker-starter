@@ -16,7 +16,7 @@ function TransactionForm({ categories, onAdd }) {
       amount: Number(amount),
       type,
       category,
-      date: new Date().toISOString().split('T')[0],
+      date: new Date().toLocaleDateString('en-CA'),
     };
 
     onAdd(newTransaction);
